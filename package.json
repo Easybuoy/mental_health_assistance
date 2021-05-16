@@ -1,0 +1,24 @@
+{
+  "name": "mental_health_assistance",
+  "version": "1.0.0",
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/a1c128aa-4622-4859-9b55-c0f7f5b8956b/deploy-status)](https://app.netlify.com/sites/trackdrills-landing/deploys)",
+  "main": "index.js",
+  "scripts": {
+    "compile": "less-watch-compiler --run-once",
+    "compile:dev": "less-watch-compiler"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easybuoy/mental_health_assistance.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/easybuoy/mental_health_assistance/issues"
+  },
+  "homepage": "https://github.com/easybuoy/mental_health_assistance#readme",
+  "dependencies": {
+    "less-watch-compiler": "^1.14.1"
+  }
+}

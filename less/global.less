@@ -1,0 +1,78 @@
+body {
+  font-family: @primaryFont;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.background {
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.background-1 {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(../assets/images/background-1.jpg);
+}
+
+.background-2 {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(../assets/images/background-2.jpg);
+}
+
+.background-3 {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(../assets/images/background-3.jpeg);
+}
+
+.button {
+  .button(@primaryColor, @white, 1rem);
+}
+
+.button-primary {
+  .button(@white, @primaryColor, 1rem);
+}
+
+.button-reverse {
+  .button-reverse(@white, @primaryColor, 1rem);
+}
+
+h1 {
+  width: 100%;
+  font-weight: bolder;
+  font-size: 2rem;
+  font-family: @secondaryFont;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+h2 {
+  width: 100%;
+  font-weight: bolder;
+  font-size: 2rem;
+  font-family: @secondaryFont;
+  padding: 2rem 0;
+  text-align: center;
+}

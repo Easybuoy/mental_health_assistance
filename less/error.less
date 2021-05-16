@@ -1,0 +1,44 @@
+.error {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+
+  .image {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 500px;
+    }
+  }
+
+  .message {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    h2 {
+      font-size: 2rem;
+      font-weight: bolder;
+      font-family: @primaryFont;
+      margin: 1rem 0;
+    }
+
+    p {
+      color: #757272;
+      font-family: @secondaryFont;
+      width: 70%;
+    }
+
+    a {
+      margin: 2rem 0;
+    }
+  }
+}

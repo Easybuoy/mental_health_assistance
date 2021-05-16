@@ -1,0 +1,407 @@
+.about {
+  h2 {
+    color: @primaryColor;
+  }
+
+  header {
+    .init(80vh);
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      url(../assets/images/about_header.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      color: @primaryColor;
+      text-align: center;
+
+      h1 {
+        font-weight: bolder;
+        font-size: 3rem;
+        width: 100%;
+      }
+
+      h2 {
+        padding: 0 3rem;
+      }
+      h3 {
+        font-size: 1.2rem;
+        width: 100%;
+      }
+
+      div {
+        width: 100%;
+      }
+    }
+  }
+
+  .mission {
+    .init(auto);
+    justify-content: center;
+
+    h2 {
+      width: 70%;
+      margin: 5rem 0;
+      color: @deepBlue;
+      font-weight: bolder;
+      font-size: 2rem;
+
+      @media only screen and (max-width: 800px) {
+        width: 90%;
+      }
+    }
+  }
+
+  .values {
+    .init(auto);
+    background-color: #f4f4f9;
+    justify-content: space-evenly;
+
+    .content {
+      width: 25%;
+      background-color: @white;
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
+      transition: all 0.3s ease-in-out;
+      min-height: 250px;
+
+      &:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
+      }
+
+      @media only screen and (max-width: 1000px) {
+        width: 30%;
+      }
+
+      @media only screen and (max-width: 900px) {
+        width: 35%;
+      }
+
+      @media only screen and (max-width: 750px) {
+        width: 40%;
+      }
+
+      @media only screen and (max-width: 650px) {
+        width: 50%;
+      }
+
+      @media only screen and (max-width: 550px) {
+        width: 60%;
+      }
+
+      @media only screen and (max-width: 500px) {
+        width: 70%;
+      }
+
+      @media only screen and (max-width: 350px) {
+        width: 90%;
+      }
+
+      h3 {
+        color: @primaryColor;
+        font-size: 1.2rem;
+        margin: 2rem 0;
+        font-weight: bolder;
+        font-family: @secondaryFont;
+      }
+
+      p {
+        color: @deepBlue;
+        line-height: 2;
+        font-family: @primaryFont;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .culture {
+    .init(auto);
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+
+    @media only screen and (max-width: 950px) {
+      flex-direction: column;
+    }
+
+    h4 {
+      font-family: @secondaryFont;
+    }
+    .content {
+      width: 45%;
+      line-height: 2;
+      @media only screen and (max-width: 950px) {
+        width: 70%;
+        margin: 1rem 0;
+      }
+
+      @media only screen and (@mobile) {
+        width: 90%;
+      }
+    }
+
+    .image {
+      width: 45%;
+      @media only screen and (max-width: 950px) {
+        width: 70%;
+        margin: 1rem 0;
+      }
+
+      @media only screen and (@mobile) {
+        width: 90%;
+      }
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .culture-details {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      background-color: #343741;
+      padding: 3rem 0;
+      margin: 1rem 0;
+      color: @white;
+      justify-content: space-evenly;
+
+      .culture-details-entity {
+        display: flex;
+        flex-wrap: wrap;
+        width: 30%;
+        margin: 2rem 0;
+        justify-content: center;
+        text-align: center;
+
+        @media only screen and (@tablet) {
+          width: 40%;
+        }
+
+        @media only screen and (max-width: 550px) {
+          width: 90%;
+        }
+
+        i {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          color: @primaryColor;
+        }
+        h3 {
+          color: @primaryColor;
+          font-size: 1.3rem;
+          font-weight: bolder;
+          margin: 1rem 0;
+        }
+
+        p {
+          line-height: 2;
+        }
+      }
+    }
+  }
+
+  .staffs {
+    .init(auto);
+    background-color: #f4f4f9;
+    justify-content: space-evenly;
+    .staff {
+      box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
+      width: 23%;
+      margin: 1rem;
+
+      @media only screen and (max-width: 1100px) {
+        width: 30%;
+      }
+
+      @media only screen and (max-width: 800px) {
+        width: 40%;
+      }
+
+      @media only screen and (max-width: 650px) {
+        width: 42%;
+      }
+
+      @media only screen and (max-width: 550px) {
+        width: 70%;
+      }
+
+      @media only screen and (max-width: 350px) {
+        width: 90%;
+      }
+      &:hover {
+        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.2);
+      }
+      img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+
+      h3 {
+        margin: 1rem;
+        text-align: center;
+        color: #343741;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        font-family: @primaryFont;
+      }
+
+      h4 {
+        margin: 1rem;
+        text-align: center;
+        font-family: @secondaryFont;
+        color: @primaryColor;
+      }
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 1rem;
+
+      span {
+        margin: 0.5rem;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: @primaryColor;
+        }
+      }
+    }
+  }
+
+  .careers {
+    .init(auto);
+    text-align: center;
+    justify-content: center;
+    margin: 1rem 0;
+
+    @media only screen and (@mobile) {
+      width: 95%;
+      margin: 0 auto;
+    }
+    .roles {
+      box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.2);
+      }
+
+      @media only screen and (@tablet) {
+        width: 70%;
+      }
+
+      @media only screen and (@mobile) {
+        width: 90%;
+      }
+
+      .role-detail {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        h3 {
+          font-weight: bolder;
+          font-family: @secondaryFont;
+          font-size: 1.2rem;
+        }
+        p {
+          background-color: #f4f4f9;
+          padding: 0.5rem;
+          border-radius: 10px;
+          margin: 0.5rem 0;
+          font-size: 0.9rem;
+          color: @primaryColor;
+
+          @media only screen and (@mobile) {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+
+  .newsletter {
+    .init(auto);
+    background-color: #f4f4f9;
+    justify-content: center;
+
+    form {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 5rem 0;
+      justify-content: space-evenly;
+
+      @media only screen and (max-width: 1100px) {
+        width: 70%;
+      }
+
+      @media only screen and (max-width: 700px) {
+        width: 80%;
+      }
+
+      @media only screen and (max-width: 600px) {
+        width: 90%;
+      }
+
+      @media only screen and (max-width: 400px) {
+        width: 95%;
+      }
+
+      input {
+        width: 70%;
+        padding: 1rem;
+        font-size: 1rem;
+        font-family: @secondaryFont;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+        outline-color: inherit;
+
+        @media only screen and (max-width: 800px) {
+          width: 80%;
+        }
+
+        @media only screen and (max-width: 600px) {
+          width: 90%;
+        }
+
+        &:focus {
+          outline: @primaryColor;
+          border: 1px solid @primaryColor;
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+        button {
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+}

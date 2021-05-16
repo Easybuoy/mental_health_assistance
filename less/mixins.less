@@ -1,0 +1,51 @@
+.button(@textColor, @backgroundColor, @font-size) {
+  color: @textColor;
+  background-color: @backgroundColor;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  border: 2px solid @textColor;
+  outline: none;
+  font-size: @font-size;
+  text-align: center;
+  font-family: @secondaryFont;
+  cursor: pointer;
+  .transition(0.3s, 1.05);
+
+  &:hover {
+    color: @backgroundColor;
+    background-color: @textColor;
+    transform: translateY(-7px);
+
+    span {
+      background-color: @backgroundColor;
+      color: @textColor;
+    }
+  }
+}
+
+.button-reverse(@textColor, @backgroundColor, @font-size) {
+  .button(@white, @primaryColor, 1rem);
+  border-radius: 3rem;
+
+  &:hover {
+    span {
+      background-color: inherit;
+      color: inherit;
+    }
+  }
+}
+
+.transition(@time, @scale) {
+  transition: all @time ease-in-out;
+
+  &:hover {
+    transform: scale(@scale);
+  }
+}
+
+.init(@height: 100vh) {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: @height;
+}
