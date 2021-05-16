@@ -325,7 +325,7 @@ nav .nav-items .get-started:hover {
   height: 100%;
   background-size: contain;
   background-position: center;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../assets/images/dashboard.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../assets/images/peer.png);
 }
 @media only screen and (max-width: 800px) {
   .home header .header-image {
